@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Form from './components/Form';
 
-function App() {
+/* 
+  ACTIVIDAD
+    - Van a habilitar la funcion editar el todo
+      (Crear un boton similar al de delete con una funcion que muestre un input donde pueda editarlo)
+    - Permitir completar la tarea
+      (Corregir primero el objeto, asignar el parametro complete al checkbox)
+    - Van a organizar el CSS a un diseño mas agradable
+ */
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='App-content'>
+        <p>TODO List</p>
+        <Form />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
